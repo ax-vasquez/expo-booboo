@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "scripts": {
     "clean-repo": "rm -rf .yarn && rm -rf .expo && rm -rf node_modules",
-    "start": "expo start --go",
+    "start": "expo start",
     "start-clean": "expo start -c",
     "android": "expo start --android",
     "ios": "expo start --ios",
