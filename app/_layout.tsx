@@ -54,15 +54,6 @@ export default function RootLayout() {
         if (params.name) {
           title = params.name
         }
-        if (params.id) {
-          if (pathName.includes('plants')) {
-            // QUERY FOR PLANT BY ID
-            const data = await db.getFirstAsync<{ nick_name: string }>("SELECT nick_name FROM plants WHERE id = ?", params.id)
-            if (data) {
-              title = data.nick_name
-            }
-          }
-        }
       }
       setPageTitle(title)
     }
